@@ -1,0 +1,30 @@
+.single-image {
+  cursor: zoom-in;
+  display: block;
+  width: 100%;
+  height: 100%;
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+  figcaption {
+    font-size: .875rem;
+    color: #999;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-image-prettybox {
+    padding: 1rem;
+    .single-image {
+      display: block;
+      height: fit-content;
+      top: 50%;
+      transform: translateY(-50%);
+      figcaption {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

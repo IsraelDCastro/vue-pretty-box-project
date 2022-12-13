@@ -1,0 +1,33 @@
+.image-gallery-wrap {
+  display: grid;
+  .image-gallery {
+    cursor: zoom-in;
+  }
+  &.squared {
+    > .image-gallery {
+      aspect-ratio: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .image-gallery-prettybox {
+    padding: 1rem;
+    .image-gallery {
+      display: block;
+      height: fit-content;
+      top: 50%;
+      transform: translateY(-50%);
+      figcaption {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
