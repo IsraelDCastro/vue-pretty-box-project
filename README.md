@@ -1,46 +1,30 @@
-# vue-pretty-box-project
+# Getting started
 
-This template should help get you started developing with Vue 3 in Vite.
+---
 
-## Recommended IDE Setup
+### Installation
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+You can install vue-pretty-box using `yarn add vue-pretty-box`, `npm install vue-pretty-box`, or `pnpm install vue-pretty-box`.
 
-## Type Support for `.vue` Imports in TS
+### Import components
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+You can import the components with the following code:
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
+```javascript
+import {
+  SingleImage,
+  ImageGallery,
+  ImageGalleryMasonry,
+  ProductGallery
+} from "vue-pretty-box";
 ```
 
-### Compile and Hot-Reload for Development
+### Import CSS/SCSS
 
-```sh
-pnpm dev
-```
+```CSS
+@import "vue-pretty-box/vue-pretty-box.css";
 
-### Type-Check, Compile and Minify for Production
+/* or */
 
-```sh
-pnpm build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-pnpm test:unit
+@import "vue-pretty-box/vue-pretty-box.scss";
 ```

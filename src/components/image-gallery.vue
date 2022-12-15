@@ -17,7 +17,7 @@ const next = () => (position.value += 1);
 
 interface Props {
   imagesUrl: { img: string; alt: string; figcaption: string }[];
-  animation: AnimationOpts;
+  animation?: AnimationOpts;
   isRounded?: boolean;
   isCircled?: boolean;
   hasShadow?: boolean;
