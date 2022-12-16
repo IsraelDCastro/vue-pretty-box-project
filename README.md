@@ -1,6 +1,8 @@
-# Getting started
+# Vue Prettybox
 
----
+It is a tool dependency that allows you to open or zoom image just by click it. It helps you to view the image to have a better look of it without making zoom in on your browser.
+
+## Getting started
 
 ### Installation
 
