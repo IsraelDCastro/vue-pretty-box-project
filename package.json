@@ -1,6 +1,6 @@
 {
   "name": "vue-pretty-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "dev": "vite",
@@ -71,5 +71,29 @@
     "vite-plugin-static-copy": "^0.13.0",
     "vitest": "^0.25.3",
     "vue-tsc": "^1.0.9"
-  }
+  },
+  "keywords": [
+    "ZoomIn",
+    "SCSS",
+    "Modal",
+    "Image",
+    "Prettybox",
+    "Pretty",
+    "Box",
+    "Vue",
+    "VueJS",
+    "Vue3",
+    "Vue components",
+    "Components"
+  ],
+  "author": {
+    "name": "Israel De Castro Alfonso",
+    "email": "israeldalfons@gmail.com",
+    "url": "https://castrodev.netlify.app/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsraelDCastro/vue-pretty-box-project/issues"
+  },
+  "homepage": "https://vue-pretty-box.netlify.app/"
 }
