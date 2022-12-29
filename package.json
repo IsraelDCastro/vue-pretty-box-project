@@ -69,7 +69,7 @@
     "vite-plugin-dts": "^1.7.1",
     "vite-plugin-sass-dts": "^1.2.7",
     "vite-plugin-static-copy": "^0.13.0",
-    "vitest": "^0.25.3",
+    "vitest": "^0.26.2",
     "vue-tsc": "^1.0.9"
   },
   "keywords": [
