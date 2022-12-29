@@ -9,7 +9,7 @@ const closeBackdrop = () => (props.bgBackdropClose ? (openSingleImageBox.value =
 
 interface Props {
   imageUrl: string;
-  animation: AnimationOpts;
+  animation?: AnimationOpts;
   alt?: string;
   figcaption?: string;
   isRounded?: boolean;
