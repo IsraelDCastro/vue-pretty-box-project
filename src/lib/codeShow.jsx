@@ -1,40 +1,35 @@
-import { defineComponent } from 'vue'
-import Prism from 'prismjs'
-import 'prismjs/themes/prism-tomorrow.css'
+import { defineComponent } from "vue";
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
 
 export default defineComponent({
-  name: 'CodeShow',
+  name: "CodeShow",
   props: {
     code: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     language: {
       type: String,
       required: true,
-      default: 'html'
+      default: "html"
     },
     codeDynamic: {
       type: String,
-      default: ''
+      default: ""
     }
   },
-  setup ({
-    code,
-    language
-  }) {
+  setup({ code, language }) {
     return () => (
       <div className="code">
         <pre>
-          <code class={`language-${language}`}>
-            {code}
-          </code>
+          <code class={`language-${language}`}>{code}</code>
         </pre>
       </div>
-    )
+    );
   },
-  mounted () {
-    Prism.highlightAll()
+  mounted() {
+    Prism.highlightAll();
   }
-})
+});

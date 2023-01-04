@@ -66,7 +66,7 @@ const props = withDefaults(defineProps<Props>(), {
           class="image carousel-item"
           :class="[{ 'is-rounded': props.isRounded }, { 'is-circled': props.isCircled }, { 'has-shadow': props.hasShadow }]"
           loading="lazy"
-          @click="openCloseProductGalleryBox((index))" />
+          @click="openCloseProductGalleryBox(index)" />
       </figure>
     </div>
     <Transition :name="props.animation" mode="out-in">
