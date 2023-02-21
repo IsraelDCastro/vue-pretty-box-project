@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { CloseIcon, LeftIcon, RightIcon } from "./icons";
 import { ref } from "vue";
 import type { AnimationOpts } from "@/components/shared/types";
+import RightIcon from "@/components/icons/right-icon.vue";
+import LeftIcon from "@/components/icons/left-icon.vue";
+import CloseIcon from "@/components/icons/close-icon.vue";
 
 const openProductGalleryBox = ref<boolean>(false);
 const position = ref<number>(0);
 
-const openCloseProductGalleryBox = (indexPosition: number) => {
+const openCloseProductGalleryBox = (indexPosition?: number) => {
   openProductGalleryBox.value = !openProductGalleryBox.value;
   position.value = indexPosition || 0;
 };
@@ -66,7 +68,7 @@ const props = withDefaults(defineProps<Props>(), {
           class="image carousel-item"
           :class="[{ 'is-rounded': props.isRounded }, { 'is-circled': props.isCircled }, { 'has-shadow': props.hasShadow }]"
           loading="lazy"
-          @click="openCloseProductGalleryBox(index)" />
+          @click="openCloseProductGalleryBox(Number(index))" />
       </figure>
     </div>
     <Transition :name="props.animation" mode="out-in">

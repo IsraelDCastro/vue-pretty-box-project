@@ -1,5 +1,5 @@
 import type { App } from "vue";
-import { ImageGallery, ImageGalleryMasonry, ProductGallery, SingleImage } from "@/components/index";
+import { SingleImage, ImageGallery, ImageGalleryMasonry, ProductGallery } from "@/components/index";
 
 export default {
   install: (app: App) => {
@@ -10,4 +10,4 @@ export default {
   }
 };
 
-export { ImageGallery, ImageGalleryMasonry, ProductGallery, SingleImage };
+export { SingleImage, ImageGallery, ImageGalleryMasonry, ProductGallery };

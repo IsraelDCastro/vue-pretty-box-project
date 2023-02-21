@@ -14,10 +14,6 @@ export default defineComponent({
       type: String,
       required: true,
       default: "html"
-    },
-    codeDynamic: {
-      type: String,
-      default: ""
     }
   },
   setup({ code, language }) {

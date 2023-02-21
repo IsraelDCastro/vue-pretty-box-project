@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { CloseIcon, LeftIcon, RightIcon } from "./icons";
+// import { CloseIcon, LeftIcon, RightIcon } from "./icons";
 import { ref } from "vue";
 import type { AnimationOpts } from "@/components/shared/types";
 
 const openImageGalleryBox = ref<boolean>(false);
 const position = ref<number>(0);
 
-const openCloseImageGalleryBox = (indexPosition: number) => {
+const openCloseImageGalleryBox = (indexPosition?: number) => {
   openImageGalleryBox.value = !openImageGalleryBox.value;
   position.value = indexPosition || 0;
 };

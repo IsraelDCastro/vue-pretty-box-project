@@ -1,20 +1,20 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import svgLoader from "vite-svg-loader";
 import typescript2 from "rollup-plugin-typescript2";
 import dts from "vite-plugin-dts";
 import * as path from "path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import sassDts from "vite-plugin-sass-dts";
-// https://vitejs.dev/config/
+
 export default defineConfig({
   plugins: [
     vue(),
-    vueJsx(),
     dts({
       insertTypesEntry: true
     }),
-    sassDts(),
+    vueJsx(),
+    svgLoader(),
     viteStaticCopy({
       targets: [
         { src: "src/assets/vue-pretty-box.scss", dest: "" },
@@ -38,19 +38,19 @@ export default defineConfig({
   build: {
     cssCodeSplit: true,
     lib: {
-      entry: "./src/components/main.ts",
+      entry: "./src/components/index.ts",
       formats: ["es", "cjs", "umd"],
       name: "VuePrettyBox",
       fileName: (format) => `vue-pretty-box.${format}.js`
     },
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "src/components/index.ts")
+        main: path.resolve(__dirname, "src/components/main.ts")
       },
       external: ["vue"],
       output: {
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "index.css") return "vue-pretty-box.css";
+          if (assetInfo.name === "main.css") return "vue-pretty-box.css";
           return assetInfo.name;
         },
         exports: "named",

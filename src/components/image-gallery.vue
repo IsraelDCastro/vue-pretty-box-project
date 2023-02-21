@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CloseIcon, LeftIcon, RightIcon } from "./icons";
+// import { CloseIcon, LeftIcon, RightIcon } from "./icons";
 import { ref } from "vue";
 import type { AnimationOpts } from "@/components/shared/types";
 
@@ -104,6 +104,7 @@ const props = withDefaults(defineProps<Props>(), {
   gap: v-bind(space);
   grid-template-columns: repeat(v-bind(columns), 1fr);
 }
+
 @media only screen and (max-width: 989px) {
   .image-gallery-wrap {
     grid-template-columns: repeat(v-bind(mdColumns), 1fr);

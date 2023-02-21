@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { CloseIcon } from "./icons";
 import { ref } from "vue";
 import type { AnimationOpts } from "@/components/shared/types";
+import CloseIcon from "@/components/icons/close-icon.vue";
 
 const openSingleImageBox = ref<boolean>(false);
 const openCloseSingleImageBox = () => (openSingleImageBox.value = !openSingleImageBox.value);
