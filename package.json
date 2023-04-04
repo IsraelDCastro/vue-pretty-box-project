@@ -15,7 +15,8 @@
   "main": "./dist/vue-pretty-box.umd.js",
   "module": "./dist/vue-pretty-box.es.js",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "exports": {
     ".": {
@@ -34,7 +35,7 @@
   "browser": {
     ".": "./dist/vue-pretty-box.es.js"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./index.d.ts",
   "dependencies": {
     "not-idea-ui": "^2.1.0",
     "vue": "^3.2.45",

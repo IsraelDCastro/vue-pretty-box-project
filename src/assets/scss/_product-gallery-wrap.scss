@@ -50,19 +50,32 @@
     }
   }
   &.is-vertical {
+    @apply flex h-96 overflow-hidden;
     .main-product-gallery {
+      @apply w-9/12 h-96;
+      img {
+        @apply object-cover object-center w-full h-full;
+      }
     }
     .carousel-product-image {
+      @apply h-96 w-3/12 flex flex-col snap-y space-x-0 space-y-4 scroll-smooth snap-start overflow-y-auto;
+      .product-gallery {
+        @apply w-full;
+      }
       &::-webkit-scrollbar {
+        @apply w-1 rounded-md;
       }
 
       &::-webkit-scrollbar-track {
+        @apply bg-slate-200/20;
       }
 
       &::-webkit-scrollbar-thumb {
+        @apply bg-gray-500/90 rounded-xl transition-all duration-400 ease-in-out;
       }
 
       &::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-500;
       }
     }
   }
