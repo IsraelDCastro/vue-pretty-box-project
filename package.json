@@ -37,7 +37,7 @@
   },
   "types": "./index.d.ts",
   "dependencies": {
-    "not-idea-ui": "^2.1.0",
+    "not-idea-ui": "^2.1.19",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
