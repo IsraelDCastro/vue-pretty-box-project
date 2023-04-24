@@ -1262,14 +1262,6 @@ check-error@^1.0.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-cli-truncate@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/cli-truncate/-/cli-truncate-3.1.0.tgz#3f23ab12535e3d73e839bb43e73c9de487db1389"
-  integrity sha512-wfOBkjXteqSnI59oPcJkcPl/ZmwvMMOj340qUIY1SKZCv0B9Cf4D4fAucRkIKQmsIuYK3x1rrgU7MeGRruiuiA==
-  dependencies:
-    slice-ansi "^5.0.0"
-    string-width "^5.0.0"
-
 code-block-writer@^12.0.0:
   version "12.0.0"
   resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-12.0.0.tgz#4dd58946eb4234105aff7f0035977b2afdc2a770"
@@ -2669,6 +2661,13 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
+magic-string@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.29.0.tgz#f034f79f8c43dba4ae1730ffb5e8c4e084b16cf3"
+  integrity sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.13"
+
 magic-string@^0.30.0:
   version "0.30.0"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.0.tgz#fd58a4748c5c4547338a424e90fa5dd17f4de529"
@@ -3324,10 +3323,10 @@ rollup-plugin-typescript2@^0.34.1:
     semver "^7.3.7"
     tslib "^2.4.0"
 
-rollup@^3.18.0:
-  version "3.20.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.20.2.tgz#f798c600317f216de2e4ad9f4d9ab30a89b690ff"
-  integrity sha512-3zwkBQl7Ai7MFYQE0y1MeQ15+9jsi7XxfrqwTb/9EK8D9C9+//EBR4M+CuA1KODRaNbFez/lWxA5vhEGZp4MUg==
+rollup@^3.20.2:
+  version "3.21.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.21.0.tgz#0a71517db56e150222670f88e5e7acfa4fede7c8"
+  integrity sha512-ANPhVcyeHvYdQMUyCbczy33nbLzI7RzrBje4uvNiTDJGIMtlKoOStmympwr9OtS1LZxiDmE2wvxHyVhoLtf1KQ==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -3919,15 +3918,14 @@ vite-svg-loader@^4.0.0:
     "@vue/compiler-sfc" "^3.2.20"
     svgo "^3.0.2"
 
-vite@4.2.1, "vite@^3.0.0 || ^4.0.0":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-4.2.1.tgz#6c2eb337b0dfd80a9ded5922163b94949d7fc254"
-  integrity sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==
+vite@4.3.1, "vite@^3.0.0 || ^4.0.0":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-4.3.1.tgz#9badb1377f995632cdcf05f32103414db6fbb95a"
+  integrity sha512-EPmfPLAI79Z/RofuMvkIS0Yr091T2ReUoXQqc5ppBX/sjFRhHKiPPF/R46cTdoci/XgeQpB23diiJxq5w30vdg==
   dependencies:
     esbuild "^0.17.5"
     postcss "^8.4.21"
-    resolve "^1.22.1"
-    rollup "^3.18.0"
+    rollup "^3.20.2"
   optionalDependencies:
     fsevents "~2.3.2"
 
