@@ -67,7 +67,7 @@
     "tailwindcss": "^3.2.4",
     "typescript": "5.0.4",
     "vite": "4.2.1",
-    "vite-plugin-dts": "^1.7.1",
+    "vite-plugin-dts": "^2.3.0",
     "vite-plugin-static-copy": "^0.13.0",
     "vite-svg-loader": "^4.0.0",
     "vitest": "^0.29.8",
