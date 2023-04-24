@@ -2808,10 +2808,10 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
-not-idea-ui@^2.1.0:
-  version "2.1.16"
-  resolved "https://registry.yarnpkg.com/not-idea-ui/-/not-idea-ui-2.1.16.tgz#bd12a975bd2241a413cff7c0a4fc2cdd26a610b5"
-  integrity sha512-6aS0nc+/8No5S5irzpfE7l20XCN9l1d3BhD8wYlRJuMyM7HnpEY0X/ohhnng5doQEyiEAkOX7Dz1A5hazNjjVQ==
+not-idea-ui@^2.1.19:
+  version "2.1.19"
+  resolved "https://registry.yarnpkg.com/not-idea-ui/-/not-idea-ui-2.1.19.tgz#f5dd4075ce861e5f064d9feae84d1fabfdbcf8b6"
+  integrity sha512-fXIRkMuwD+IG/7qE7N/wAx6knEavYsOvR1SeVPuT35pQr0+9DRCfqClxkmxw7zrI/EaL6rkauNZUEuNYXQ1+3g==
   dependencies:
     autoprefixer "^10.4.7"
     postcss "^8.4.14"
