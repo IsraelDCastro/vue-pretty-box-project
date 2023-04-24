@@ -37,7 +37,7 @@
   },
   "types": "./index.d.ts",
   "dependencies": {
-    "not-idea-ui": "^2.1.0",
+    "not-idea-ui": "^2.1.19",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
@@ -63,11 +63,11 @@
     "prettier": "^2.8.1",
     "prismjs": "^1.29.0",
     "rollup-plugin-typescript2": "^0.34.1",
-    "sass": "^1.56.2",
+    "sass": "^1.62.0",
     "tailwindcss": "^3.2.4",
-    "typescript": "5.0.3",
+    "typescript": "5.0.4",
     "vite": "4.2.1",
-    "vite-plugin-dts": "^1.7.1",
+    "vite-plugin-dts": "^2.3.0",
     "vite-plugin-static-copy": "^0.13.0",
     "vite-svg-loader": "^4.0.0",
     "vitest": "^0.30.1",
