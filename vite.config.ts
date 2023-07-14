@@ -39,7 +39,7 @@ export default defineConfig({
     cssCodeSplit: true,
     lib: {
       entry: "./src/components/index.ts",
-      formats: ["es", "cjs", "umd"],
+      formats: ["es", "umd"],
       name: "VuePrettyBox",
       fileName: (format) => `vue-pretty-box.${format}.js`
     },

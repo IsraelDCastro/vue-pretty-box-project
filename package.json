@@ -1,6 +1,6 @@
 {
   "name": "vue-pretty-box",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "scripts": {
     "dev": "vite",
@@ -20,8 +20,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/vue-pretty-box.umd.js",
-      "require": "./dist/vue-pretty-box.es.js"
+      "import": "./dist/vue-pretty-box.es.js",
+      "require": "./dist/vue-pretty-box.umd.js"
     },
     "./dist/vue-pretty-box.css": {
       "import": "./dist/vue-pretty-box.css",
@@ -35,7 +35,7 @@
   "browser": {
     ".": "./dist/vue-pretty-box.es.js"
   },
-  "types": "./index.d.ts",
+  "types": "./dist/components/main.d.ts",
   "dependencies": {
     "not-idea-ui": "^2.1.0",
     "vue": "^3.2.45",
@@ -73,6 +73,7 @@
     "vitest": "^0.29.8",
     "vue-tsc": "^1.0.11"
   },
+  "description": "Vue-Pretty-Box is a powerful library designed specifically for VueJS 3, providing enhanced image viewing capabilities within your Vue applications. This versatile library allows you to effortlessly integrate zoom functionality for both single images and image galleries, enabling users to delve into the minutest details with ease.",
   "keywords": [
     "ZoomIn",
     "SCSS",
