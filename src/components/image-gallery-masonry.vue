@@ -1,5 +1,8 @@
 <script setup lang="ts">
-// import { CloseIcon, LeftIcon, RightIcon } from "./icons";
+import RightIcon from "@/components/icons/right-icon.vue";
+import LeftIcon from "@/components/icons/left-icon.vue";
+import CloseIcon from "@/components/icons/close-icon.vue";
+
 import { ref } from "vue";
 import type { AnimationOpts } from "@/components/shared/types";
 
