@@ -1,3 +1,4 @@
+import "tailwindcss/base.css";
 import "@/assets/vue-pretty-box.scss";
 
 export { default as SingleImage } from "@/components/single-image.vue";
