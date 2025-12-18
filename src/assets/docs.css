@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@layer utilities {
+  @import "./docs/_animation.css";
+  @import "./docs/_global.css";
+  @import "./docs/_table.css";
+}
+
+@theme {
+  /* Primary Colors */
+  ---color-primary-50: #FFEBEB;
+  ---color-primary-100: #FECDCD;
+  ---color-primary-200: #FEAFB0;
+  ---color-primary-300: #FD9092;
+  ---color-primary-400: #FD7275;
+  ---color-primary-500: #FC5457;
+  ---color-primary-600: #F22C30;
+  ---color-primary-700: #E70409;
+  ---color-primary-800: #B50307;
+  ---color-primary-900: #830204;
+  ---color-primary-950: #830204;
+
+  /* Secondary Colors */
+  ---color-secondary-50: #FFFAFA;
+  ---color-secondary-100: #FDD3D3;
+  ---color-secondary-200: #FCACAD;
+  ---color-secondary-300: #FA8486;
+  ---color-secondary-400: #F95D60;
+  ---color-secondary-500: #F73639;
+  ---color-secondary-600: #DB1F22;
+  ---color-secondary-700: #BF080A;
+  ---color-secondary-800: #8E0608;
+  ---color-secondary-900: #5D0405;
+  ---color-secondary-950: #5D0405;
+
+  /* Tertiary Colors */
+  ---color-tertiary-50: #FAF6FE;
+  ---color-tertiary-100: #E6DBEF;
+  ---color-tertiary-200: #D3BFE0;
+  ---color-tertiary-300: #BFA4D1;
+  ---color-tertiary-400: #AB89C2;
+  ---color-tertiary-500: #986DB2;
+  ---color-tertiary-600: #8452A3;
+  ---color-tertiary-700: #703794;
+  ---color-tertiary-800: #5D1B85;
+  ---color-tertiary-900: #490076;
+  ---color-tertiary-950: #490076;
+
+  /* Transition Durations */
+  --duration-0: 0ms;
+  --duration-400: 400ms;
+  --duration-600: 600ms;
+
+  /* Z-Index */
+  --z-n1: -1;
+  --z-1: 1;
+  --z-5: 5;
+
+  /* Inset */
+  --inset-n100: -100%;
+
+  /* Breakpoints */
+  --screen-tablet: 989px;
+  --screen-max-md: 988px;
+  --screen-mb: 500px;
+
+  /* Border Width */
+  --border-6: 6px;
+
+  /* Box Shadows */
+  --shadow-alert: 0 6px 26px rgba(0, 0, 0, 0.1);
+  --shadow-base: 0 3px 20px rgba(0, 0, 0, 0.05);
+
+  /* Min Heights */
+  --min-h-24: 6rem;
+  --min-h-3-5: 14px;
+
+  /* Font Families */
+  --font-sans: "Nunito Sans", "Lato", "Inter", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  --font-body: "Nunito", "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}

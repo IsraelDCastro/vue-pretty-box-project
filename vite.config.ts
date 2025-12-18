@@ -5,22 +5,17 @@ import svgLoader from "vite-svg-loader";
 import typescript2 from "rollup-plugin-typescript2";
 import dts from "vite-plugin-dts";
 import * as path from "path";
-import { viteStaticCopy } from "vite-plugin-static-copy";
+import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig({
+export default defineConfig(({ command, mode }) => ({
   plugins: [
+    command === "serve" ? tailwindcss() : undefined,
     vue(),
     dts({
       insertTypesEntry: true
     }),
     vueJsx(),
     svgLoader(),
-    viteStaticCopy({
-      targets: [
-        { src: "src/assets/vue-pretty-box.scss", dest: "" },
-        { src: "src/assets/scss", dest: "" }
-      ]
-    }),
     typescript2({
       check: false,
       include: ["src/components/**/*.vue"],
@@ -37,6 +32,7 @@ export default defineConfig({
   ],
   build: {
     cssCodeSplit: true,
+    cssMinify: true,
     lib: {
       entry: "./src/components/index.ts",
       formats: ["es", "umd"],
@@ -47,7 +43,7 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, "src/components/main.ts")
       },
-      external: ["vue"],
+      external: ["vue", "motion-v"],
       output: {
         assetFileNames: (assetInfo) => {
           if (assetInfo.name === "main.css") return "vue-pretty-box.css";
@@ -55,7 +51,8 @@ export default defineConfig({
         },
         exports: "named",
         globals: {
-          vue: "Vue"
+          vue: "Vue",
+          "motion-v": "MotionV"
         }
       }
     }
@@ -75,4 +72,4 @@ export default defineConfig({
       "@/layouts": path.resolve(__dirname, "src/layouts")
     }
   }
-});
+}));
